@@ -3,100 +3,137 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Festa de Aniversário — DD/MM/AAAA</title>
+    <title>Aniversário de Gedyel — 21/12/2005</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container header-inner">
-        <h1 class="brand">Aniversário de <span id="host-name">Gedyel</span></h1>
-        <nav class="nav">
-          <a href="#about">Sobre</a>
-          <a href="#program">Programação</a>
-          <a href="#local">Local</a>
-          <a href="#rsvp" class="cta">Confirmar</a>
-        </nav>
+      <div class="container">
+        <div class="logo">EBAC</div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <h2>Venha celebrar meu aniversário</h2>
-            <p class="date">Data: <strong id="event-date">21/12/2005</strong> — Tema: "Dia Especial"</p>
-            <p class="lead">Uma noite com música, comida e boas memórias. Traga sua alegria!</p>
-            <a href="#rsvp" class="btn">Quero ir</a>
+      <!-- Hero Section -->
+      <section class="hero dark-bg">
+        <div class="container">
+          <h1>O maior evento de aniversário do Brasil começa em</h1>
+          <div class="countdown">
+            <div class="countdown-item">
+              <span id="days">30</span>
+              <p>Dias</p>
+            </div>
+            <div class="countdown-item">
+              <span id="hours">17</span>
+              <p>Horas</p>
+            </div>
+            <div class="countdown-item">
+              <span id="minutes">20</span>
+              <p>Minutos</p>
+            </div>
+            <div class="countdown-item">
+              <span id="seconds">56</span>
+              <p>Segundos</p>
+            </div>
           </div>
-          <div class="hero-media">
-            <div class="hero-placeholder">
-              <p>Adicione sua imagem ou vídeo aqui</p>
+
+          <table class="info-table">
+            <tr>
+              <th>Localização</th>
+              <th>Preço</th>
+              <th>Quando</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Salão Parque, Santa Tereza - São Paulo</td>
+              <td>A partir do R$ 120,00</td>
+              <td>21/12/2025</td>
+              <td><button class="btn-primary">Garantir minha vaga</button></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 1: Front-end (Blue) -->
+      <section class="content-section blue-bg">
+        <div class="container">
+          <div class="content-inner">
+            <div class="content-text">
+              <h2>Front-end</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+            <div class="content-image">
+              <div class="img-placeholder">Imagem</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container">
-        <h3>Sobre o evento</h3>
-        <p>Vamos comemorar o meu aniversário com uma festa descontraída — música, comes e bebes, e muita diversão. Dress code: casual.</p>
+      <!-- Section 2: Backend (Purple) -->
+      <section class="content-section purple-bg">
+        <div class="container">
+          <div class="content-inner reverse">
+            <div class="content-image">
+              <div class="img-placeholder">Imagem</div>
+            </div>
+            <div class="content-text">
+              <h2>Backend</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="program" class="section container">
-        <h3>Programação</h3>
-        <ul class="program-list">
-          <li><strong>19:00</strong> - Recepção</li>
-          <li><strong>20:00</strong> - Jantar</li>
-          <li><strong>21:30</strong> - Bolos e parabéns</li>
-          <li><strong>22:00</strong> - Música e dança</li>
-        </ul>
+      <!-- Section 3: Front-end (Red) -->
+      <section class="content-section red-bg">
+        <div class="container">
+          <div class="content-inner">
+            <div class="content-text">
+              <h2>Front-end</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+            <div class="content-image">
+              <div class="img-placeholder">Imagem</div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="local" class="section container">
-        <h3>Local</h3>
-        <p>Endereço: <span id="address">Rua Exemplo, 123 — Cidade</span></p>
-        <div class="map-placeholder">Mapa (insira iframe do Google Maps aqui)</div>
-      </section>
-
-      <section id="rsvp" class="section container rsvp-section">
-        <h3>Confirme sua presença</h3>
-        <form class="rsvp-form" onsubmit="handleRSVP(event)">
-          <label>
-            Nome
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            E-mail
-            <input type="email" name="email" required />
-          </label>
-          <label class="small">
-            Vou comparecer?
-            <select name="attend">
-              <option value="sim">Sim</option>
-              <option value="nao">Não</option>
-            </select>
-          </label>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        <p class="rsvp-note">Após enviar, você receberá um e-mail de confirmação (exemplo local — configure envio real em backend).</p>
+      <!-- Section 4: Backend (Brown) -->
+      <section class="content-section brown-bg">
+        <div class="container">
+          <div class="content-inner reverse">
+            <div class="content-image">
+              <div class="img-placeholder">Imagem</div>
+            </div>
+            <div class="content-text">
+              <h2>Backend</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>Feito com ♥ — Substitua o conteúdo pela sua data e informações reais.</p>
-      </div>
-    </footer>
-
     <script>
-      function handleRSVP(e){
-        e.preventDefault();
-        const form = e.currentTarget;
-        const data = new FormData(form);
-        alert('Obrigado, ' + data.get('name') + '! Confirmação registrada (exemplo).');
-        form.reset();
+      function updateCountdown() {
+        const eventDate = new Date('2025-12-21T00:00:00').getTime();
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
       }
-      // Exemplo: substituir data dinamicamente se desejar
-      // document.getElementById('event-date').textContent = '25/12/2025';
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
     </script>
   </body>
 </html>
