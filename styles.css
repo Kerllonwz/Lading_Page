@@ -170,6 +170,13 @@ body {
   font-size: 1.2rem;
 }
 
+.content-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
 /* Background Colors */
 .blue-bg {
   background: linear-gradient(135deg, #1e5ba8 0%, #2a7ec8 100%);
